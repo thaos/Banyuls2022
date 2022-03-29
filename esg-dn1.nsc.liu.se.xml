@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<response>
+
+<lst name="responseHeader">
+  <int name="status">0</int>
+  <int name="QTime">572</int>
+  <lst name="params">
+    <arr name="facet.field">
+      <str>project</str>
+      <str>product</str>
+      <str>domain</str>
+      <str>institute</str>
+      <str>driving_model</str>
+      <str>experiment</str>
+      <str>experiment_family</str>
+      <str>ensemble</str>
+      <str>rcm_name</str>
+      <str>rcm_version</str>
+      <str>time_frequency</str>
+      <str>variable</str>
+      <str>variable_long_name</str>
+      <str>cf_standard_name</str>
+      <str>data_node</str>
+    </arr>
+    <str name="df">text</str>
+    <str name="q.alt">*:*</str>
+    <str name="indent">true</str>
+    <str name="echoParams">all</str>
+    <str name="fl">*,score</str>
+    <str name="start">0</str>
+    <arr name="fq">
+      <str>type:Dataset</str>
+      <str>replica:false</str>
+      <str>latest:true</str>
+      <str>domain:"EUR-11"</str>
+      <str>rcm_name:"RegCM4-6"</str>
+      <str>project:"CORDEX"</str>
+      <str>time_frequency:"day"</str>
+      <str>experiment:"historical" || experiment:"rcp45" || experiment:"rcp85"</str>
+      <str>driving_model:"MOHC-HadGEM2-ES"</str>
+      <str>variable:"huss" || variable:"pr" || variable:"sfcWind" || variable:"tas" || variable:"tasmax" || variable:"tasmin"</str>
+      <str>ensemble:"r1i1p1"</str>
+    </arr>
+    <str name="rows">100</str>
+    <str name="q">*:*</str>
+    <str name="shards">localhost/solr/datasets,localhost:8985/solr/datasets,localhost:8986/solr/datasets,localhost:8987/solr/datasets,localhost:8988/solr/datasets,localhost:8989/solr/datasets,localhost:8990/solr/datasets,localhost:8991/solr/datasets,localhost:8992/solr/datasets</str>
+    <str name="tie">0.01</str>
+    <str name="facet.limit">-1</str>
+    <str name="qf">text</str>
+    <str name="facet.method">enum</str>
+    <str name="facet.mincount">1</str>
+    <str name="facet">true</str>
+    <str name="wt">xml</str>
+    <str name="facet.sort">lex</str>
+  </lst>
+</lst>
+<result name="response" numFound="12" start="0" maxScore="1.0">
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>specific_humidity</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">1970-06-01T12:00:00Z</date>
+    <date name="datetime_stop">2005-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>historical</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>Historical</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">36</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">10739474231</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/24/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>huss</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Near-Surface Specific Humidity</str>
+    </arr>
+    <arr name="variable_units">
+      <str>1</str>
+    </arr>
+    <long name="_version_">1727065589310029824</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:08:15.274Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.pr.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>precipitation_flux</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">1970-06-01T12:00:00Z</date>
+    <date name="datetime_stop">2005-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>historical</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>Historical</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.pr.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.pr</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">36</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">7859664152</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.pr</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/24/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.pr.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.pr.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>pr</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Precipitation</str>
+    </arr>
+    <arr name="variable_units">
+      <str>kg m-2 s-1</str>
+    </arr>
+    <long name="_version_">1727065590448783360</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:08:16.360Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>wind_speed</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">1970-06-01T12:00:00Z</date>
+    <date name="datetime_stop">2005-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>historical</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>Historical</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.sfcWind</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">36</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">14394605404</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.sfcWind</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/24/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>sfcWind</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Near-Surface Wind Speed</str>
+    </arr>
+    <arr name="variable_units">
+      <str>m s-1</str>
+    </arr>
+    <long name="_version_">1727065593327124480</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:08:19.105Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tas.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>air_temperature</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">1970-06-01T12:00:00Z</date>
+    <date name="datetime_stop">2005-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>historical</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>Historical</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tas.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tas</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">36</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">8279548490</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tas</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/24/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tas.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tas.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>tas</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Near-Surface Air Temperature</str>
+    </arr>
+    <arr name="variable_units">
+      <str>K</str>
+    </arr>
+    <long name="_version_">1727065596861874176</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:08:22.476Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>air_temperature</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">1970-06-01T12:00:00Z</date>
+    <date name="datetime_stop">2005-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>historical</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>Historical</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmax</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">36</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">8276476875</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmax</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/24/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>tasmax</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Daily Maximum Near-Surface Air Temperature</str>
+    </arr>
+    <arr name="variable_units">
+      <str>K</str>
+    </arr>
+    <long name="_version_">1727065597151281152</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:08:22.752Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>air_temperature</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">1970-06-01T12:00:00Z</date>
+    <date name="datetime_stop">2005-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>historical</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>Historical</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmin</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">36</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">8489311116</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmin</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/24/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>tasmin</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Daily Minimum Near-Surface Air Temperature</str>
+    </arr>
+    <arr name="variable_units">
+      <str>K</str>
+    </arr>
+    <long name="_version_">1727065597389307904</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:08:22.979Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.huss.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>specific_humidity</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">2005-12-01T12:00:00Z</date>
+    <date name="datetime_stop">2099-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>rcp85</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>RCP</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.huss.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.huss</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">95</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">28243142265</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.huss</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/25/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.huss.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.huss.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>huss</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Near-Surface Specific Humidity</str>
+    </arr>
+    <arr name="variable_units">
+      <str>1</str>
+    </arr>
+    <long name="_version_">1727065732390322176</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:10:31.726Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.pr.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>precipitation_flux</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">2005-12-01T12:00:00Z</date>
+    <date name="datetime_stop">2099-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>rcp85</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>RCP</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.pr.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.pr</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">95</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">19977182636</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.pr</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/25/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.pr.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.pr.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>pr</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Precipitation</str>
+    </arr>
+    <arr name="variable_units">
+      <str>kg m-2 s-1</str>
+    </arr>
+    <long name="_version_">1727065733884542976</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:10:33.151Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>wind_speed</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">2005-12-01T12:00:00Z</date>
+    <date name="datetime_stop">2099-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>rcp85</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>RCP</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.sfcWind</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">95</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">38058904577</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.sfcWind</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/25/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.sfcWind.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>sfcWind</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Near-Surface Wind Speed</str>
+    </arr>
+    <arr name="variable_units">
+      <str>m s-1</str>
+    </arr>
+    <long name="_version_">1727065738108207104</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:10:37.179Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tas.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>air_temperature</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">2005-12-01T12:00:00Z</date>
+    <date name="datetime_stop">2099-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>rcp85</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>RCP</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tas.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tas</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">95</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">21666316029</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tas</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/25/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tas.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tas.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>tas</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Near-Surface Air Temperature</str>
+    </arr>
+    <arr name="variable_units">
+      <str>K</str>
+    </arr>
+    <long name="_version_">1727065743145566208</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:10:41.983Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>air_temperature</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">2005-12-01T12:00:00Z</date>
+    <date name="datetime_stop">2099-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>rcp85</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>RCP</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmax</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">95</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">21834329063</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmax</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/25/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmax.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>tasmax</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Daily Maximum Near-Surface Air Temperature</str>
+    </arr>
+    <arr name="variable_units">
+      <str>K</str>
+    </arr>
+    <long name="_version_">1727065743501033472</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:10:42.322Z</date>
+    <float name="score">1.0</float></doc>
+  <doc>
+    <str name="id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502|esgf-ictp.hpc.cineca.it</str>
+    <str name="version">20190502</str>
+    <arr name="access">
+      <str>HTTPServer</str>
+      <str>GridFTP</str>
+      <str>OPENDAP</str>
+    </arr>
+    <arr name="cf_standard_name">
+      <str>air_temperature</str>
+    </arr>
+    <str name="data_node">esgf-ictp.hpc.cineca.it</str>
+    <arr name="dataset_id_template_">
+      <str>cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s</str>
+    </arr>
+    <date name="datetime_start">2005-12-01T12:00:00Z</date>
+    <date name="datetime_stop">2099-12-30T12:00:00Z</date>
+    <arr name="directory_format_template_">
+      <str>%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s</str>
+    </arr>
+    <arr name="domain">
+      <str>EUR-11</str>
+    </arr>
+    <arr name="driving_model">
+      <str>MOHC-HadGEM2-ES</str>
+    </arr>
+    <arr name="ensemble">
+      <str>r1i1p1</str>
+    </arr>
+    <arr name="experiment">
+      <str>rcp85</str>
+    </arr>
+    <arr name="experiment_family">
+      <str>All</str>
+      <str>RCP</str>
+    </arr>
+    <str name="index_node">esg-dn1.nsc.liu.se</str>
+    <str name="instance_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502</str>
+    <arr name="institute">
+      <str>ICTP</str>
+    </arr>
+    <bool name="latest">true</bool>
+    <str name="master_id">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmin</str>
+    <int name="number_of_aggregations">1</int>
+    <int name="number_of_files">95</int>
+    <arr name="product">
+      <str>output</str>
+    </arr>
+    <arr name="project">
+      <str>CORDEX</str>
+    </arr>
+    <arr name="rcm_name">
+      <str>RegCM4-6</str>
+    </arr>
+    <arr name="rcm_version">
+      <str>v1</str>
+    </arr>
+    <bool name="replica">false</bool>
+    <long name="size">22386389883</long>
+    <arr name="time_frequency">
+      <str>day</str>
+    </arr>
+    <str name="title">cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmin</str>
+    <str name="type">Dataset</str>
+    <arr name="url">
+      <str>http://esgf-ictp.hpc.cineca.it/thredds/catalog/esgcet/25/cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502.xml#cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.rcp85.r1i1p1.RegCM4-6.v1.day.tasmin.v20190502|application/xml+thredds|THREDDS</str>
+    </arr>
+    <arr name="variable">
+      <str>tasmin</str>
+    </arr>
+    <arr name="variable_long_name">
+      <str>Daily Minimum Near-Surface Air Temperature</str>
+    </arr>
+    <arr name="variable_units">
+      <str>K</str>
+    </arr>
+    <long name="_version_">1727065743873277952</long>
+    <bool name="retracted">false</bool>
+    <date name="_timestamp">2022-03-12T04:10:42.677Z</date>
+    <float name="score">1.0</float></doc>
+</result>
+<lst name="facet_counts">
+  <lst name="facet_queries"/>
+  <lst name="facet_fields">
+    <lst name="project">
+      <int name="CORDEX">12</int>
+    </lst>
+    <lst name="product">
+      <int name="output">12</int>
+    </lst>
+    <lst name="domain">
+      <int name="EUR-11">12</int>
+    </lst>
+    <lst name="institute">
+      <int name="ICTP">12</int>
+    </lst>
+    <lst name="driving_model">
+      <int name="MOHC-HadGEM2-ES">12</int>
+    </lst>
+    <lst name="experiment">
+      <int name="historical">6</int>
+      <int name="rcp85">6</int>
+    </lst>
+    <lst name="experiment_family">
+      <int name="All">12</int>
+      <int name="Historical">6</int>
+      <int name="RCP">6</int>
+    </lst>
+    <lst name="ensemble">
+      <int name="r1i1p1">12</int>
+    </lst>
+    <lst name="rcm_name">
+      <int name="RegCM4-6">12</int>
+    </lst>
+    <lst name="rcm_version">
+      <int name="v1">12</int>
+    </lst>
+    <lst name="time_frequency">
+      <int name="day">12</int>
+    </lst>
+    <lst name="variable">
+      <int name="huss">2</int>
+      <int name="pr">2</int>
+      <int name="sfcWind">2</int>
+      <int name="tas">2</int>
+      <int name="tasmax">2</int>
+      <int name="tasmin">2</int>
+    </lst>
+    <lst name="variable_long_name">
+      <int name="Daily Maximum Near-Surface Air Temperature">2</int>
+      <int name="Daily Minimum Near-Surface Air Temperature">2</int>
+      <int name="Near-Surface Air Temperature">2</int>
+      <int name="Near-Surface Specific Humidity">2</int>
+      <int name="Near-Surface Wind Speed">2</int>
+      <int name="Precipitation">2</int>
+    </lst>
+    <lst name="cf_standard_name">
+      <int name="air_temperature">6</int>
+      <int name="precipitation_flux">2</int>
+      <int name="specific_humidity">2</int>
+      <int name="wind_speed">2</int>
+    </lst>
+    <lst name="data_node">
+      <int name="esgf-ictp.hpc.cineca.it">12</int>
+    </lst>
+  </lst>
+  <lst name="facet_ranges"/>
+  <lst name="facet_intervals"/>
+  <lst name="facet_heatmaps"/>
+</lst>
+</response>
