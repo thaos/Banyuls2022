@@ -1,7 +1,7 @@
 # create credentials and cookies in .esg
 # https://esgf.github.io/esgf-user-support/user_guide.html#access-data-with-the-command-line-via-opendap
 library(ncdf4)
-
+library(ncdf4.helpers)
 # test
 nc_open("http://esgf-ictp.hpc.cineca.it/thredds/dodsC/esg_dataroot/cordex/output/SAM-22/ICTP/ECMWF-ERAINT/evaluation/r1i1p1/ICTP-RegCM4-7/v0/fx/areacella/v20190502/areacella_SAM-22_ECMWF-ERAINT_evaluation_r1i1p1_ICTP-RegCM4-7_v0_fx.nc")
 
@@ -47,6 +47,7 @@ opendap_urls <- get_opendap_url(doc)
 nc <- nc_open(opendap_urls[1])
 lon <- ncvar_get(nc, "lon")
 lat <- ncvar_get(nc, "lat")
+
 coords <- data.frame(lon = c(lon), lat = c(lat))
 coordinates(coords) <- ~ lon + lat
 nc_close(nc)
@@ -55,6 +56,8 @@ shape <- readOGR("BassinsMed_ShapeFile", "bassins2")
 iinside <- over(coords, shape)
 icoords <- arrayInd(which(iinside == 151), dim(lon))
 points(lon[iinside == 151], lat[iinside == 151])
+
+datapoints <- apply(icoords, 1, function(coord) ncvar_get(nc, varid = "huss", start = c(coord[1], coord[2], 1), count = c(1, 1, -1)))
 
 
 
