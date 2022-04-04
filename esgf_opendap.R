@@ -28,11 +28,8 @@ time <- ncdf4.helpers::nc.get.time.series(nc)
 
 xycoords <- expand.grid(x = x, y = y)
 xycoords$Id <- seq.int(nrow(xycoords))
-llcoords <- data.frame(lon = c(lon), lat = c(lat))
-sp::coordinates(llcoords) <- ~ lon + lat
 sp::coordinates(xycoords) <- ~ x + y
 sp::proj4string(xycoords) <- sp::CRS(ncdf4::ncatt_get(nc, "crs")$"proj4_params")
-# grd_xycoords = sp::SpatialPixels(sp::SpatialPoints(xycoords))
 grd_xycoords = as(xycoords, "SpatialPixels")
 
 
@@ -84,26 +81,6 @@ datapoints <- apply(
 )
 
 ncdf4::nc_close(nc)
-
-
-
-                                        # Parse XML from ESGF Searh
-
-
-## coordinates of gridcell, the center of which is inside of Tech
-iinside <- sp::over(coords, shape)
-icoords <- arrayInd(which(iinside == 151), dim(lon))
-
-
-
-sp::plot(shape)
-points(lon[iinside == 151], lat[iinside == 151])
-
-datapoints <- apply(icoords, 1, function(coord) ncvar_get(nc, varid = "huss", start = c(coord[1], coord[2], 1), count = c(1, 1, -1)))
-nc_close(nc)
-
-
-nc_close(nc)
 
 
 
