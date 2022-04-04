@@ -45,7 +45,7 @@ get_opendap_url <- function(doc){
   opendap <- xml2::xml_child(
     thredd,
     search = which(
-      xml2::xml_attr(xml_children(thredd), attr = "serviceType") == "OpenDAP"
+      xml2::xml_attr(xml2::xml_children(thredd), attr = "serviceType") == "OpenDAP"
     )
   )
   base <- xml2::xml_attr(opendap, attr = "base")
@@ -72,10 +72,10 @@ load_data_from_opendap <- function (
 ){
   df <- data.frame()  
   for(i in seq_along(opendap_urls)){
-    nc <- nc_open(opendap_urls[i])
+    nc <- ncdf4::nc_open(opendap_urls[i])
     if(i == 1){
-      lon <- ncvar_get(nc, "lon")
-      lat <- ncvar_get(nc, "lat")
+      lon <- ncdf4::ncvar_get(nc, "lon")
+      lat <- ncdf4::ncvar_get(nc, "lat")
       coords <- data.frame(lon = c(lon), lat = c(lat))
       sp::coordinates(coords) <- ~ lon + lat
       iinside <- sp::over(coords, shape)
@@ -97,11 +97,9 @@ load_data_from_opendap <- function (
     )
     colnames(datapoints) <- rep(varname, ncol(datapoints))
     time <- ncdf4.helpers::nc.get.time.series(nc)
-    print(str(time))
-    nc_close(nc)
+    ncdf4::nc_close(nc)
     df <- rbind(df, cbind(time = time, datapoints))
     # print(dim(df))
-    print(str(df))
   }
   attr(df, "lon") <- lon[iinside]
   attr(df, "lat") <- lat[iinside]
