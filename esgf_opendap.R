@@ -16,7 +16,7 @@ library(sp)
 esgf_search <- fromJSON(file = "https://esg-dn1.nsc.liu.se/esg-search/search/?offset=0&limit=100&type=Dataset&replica=false&latest=true&domain=EUR-11&rcm_name=RegCM4-6&project=CORDEX&time_frequency=day&experiment=historical%2Crcp45%2Crcp85&driving_model=MOHC-HadGEM2-ES&variable=huss%2Cpr%2CsfcWind%2Ctas%2Ctasmax%2Ctasmin&ensemble=r1i1p1&facets=project%2Cproduct%2Cdomain%2Cinstitute%2Cdriving_model%2Cexperiment%2Cexperiment_family%2Censemble%2Crcm_name%2Crcm_version%2Ctime_frequency%2Cvariable%2Cvariable_long_name%2Ccf_standard_name%2Cdata_node&format=application%2Fsolr%2Bjson")
 
 esgf_search <- read_xml("https://esg-dn1.nsc.liu.se/esg-search/search/?offset=0&limit=100&type=Dataset&replica=false&latest=true&domain=EUR-11&rcm_name=RegCM4-6&project=CORDEX&time_frequency=day&experiment=historical%2Crcp45%2Crcp85&driving_model=MOHC-HadGEM2-ES&variable=huss%2Cpr%2CsfcWind%2Ctas%2Ctasmax%2Ctasmin&ensemble=r1i1p1&facets=project%2Cproduct%2Cdomain%2Cinstitute%2Cdriving_model%2Cexperiment%2Cexperiment_family%2Censemble%2Crcm_name%2Crcm_version%2Ctime_frequency%2Cvariable%2Cvariable_long_name%2Ccf_standard_name%2Cdata_node&format=application%2Fsolr%2Bxml")
-esgf_search <- read_xml("esg-dn1.nsc.liu.se.xml")
+# esgf_search <- read_xml("esg-dn1.nsc.liu.se.xml")
 
 xml_name(esgf_search)
 xml_children(esgf_search)[2] |> xml_child(search =  1)
@@ -55,7 +55,7 @@ get_opendap_url <- function(doc){
     doc,
     search = which(xml_attr(xml_children(doc), attr = "name") == "url")
   ) |> xml_text()
-  url_thredd <- "cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss.v20190502.xml"
+  # url_thredd <- "cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss.v20190502.xml"
   thredd <- read_xml(url_thredd)  |>
     xml_ns_strip()
   opendap <- xml_child(
