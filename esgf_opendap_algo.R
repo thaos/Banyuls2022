@@ -33,14 +33,14 @@ get_opendap_url <- function(doc){
     search = which(
       xml2::xml_attr(xml2::xml_children(doc), attr = "name") == "data_node"
     )
-  ) |>
+  ) %>%
     xml2::xml_text()
   url_thredd <- xml2::xml_child(
     doc,
     search = which(xml2::xml_attr(xml2::xml_children(doc), attr = "name") == "url")
-  ) |> xml2::xml_text()
+  ) %>% xml2::xml_text()
   # url_thredd <- "cordex.output.EUR-11.ICTP.MOHC-HadGEM2-ES.historical.r1i1p1.RegCM4-6.v1.day.huss.v20190502.xml"
-  thredd <- xml2::read_xml(url_thredd)  |>
+  thredd <- xml2::read_xml(url_thredd)  %>%
     xml2::xml_ns_strip()
   opendap <- xml2::xml_child(
     thredd,
@@ -49,7 +49,7 @@ get_opendap_url <- function(doc){
     )
   )
   base <- xml2::xml_attr(opendap, attr = "base")
-  datasets <- xml2::xml_child(thredd, search = "dataset") |>
+  datasets <- xml2::xml_child(thredd, search = "dataset") %>%
     xml2::xml_find_all(xpath = "dataset")
   fnames <- xml2::xml_attr(datasets, "name")
   iagg <- grepl("aggregation", fnames)
@@ -58,7 +58,7 @@ get_opendap_url <- function(doc){
   opendap_urls <- xml2::xml_find_all(datasets, "access")
   opendap_urls <- opendap_urls[
     xml2::xml_attr(opendap_urls, "serviceName") == "OpenDAPServer"
-  ] |>
+  ] %>%
     xml2::xml_attr(attr = "urlPath")
   opendap_urls <- paste0("http://", data_node, base, opendap_urls)
   return(opendap_urls)
@@ -132,7 +132,7 @@ load_data_from_opendap_in_xml <- function (
         ))
    )
 ){
-    docs <- xml2::xml_child(esgf_search, "result") |>
+    docs <- xml2::xml_child(esgf_search, "result") %>%
     	xml2::xml_children()  
     return(lapply(docs, load_data_from_doc, shape = shape))
 }

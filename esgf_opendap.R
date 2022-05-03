@@ -6,7 +6,7 @@
 ## library(rgeos)
 ## library(sp)
 ## library(raster)
-
+library(magrittr)
 
 
                                         # Read data from netcdf from OpenDAP link
@@ -96,7 +96,7 @@ esgf_search <- xml2::read_xml("https://esg-dn1.nsc.liu.se/esg-search/search/?off
 
 
 ## show how to navigate this xml document web browser
-doc <- xml2::xml_child(esgf_search, "result") |> xml2::xml_child(search =  1)
+doc <- xml2::xml_child(esgf_search, "result") %>% xml2::xml_child(search =  1)
 
 ## retrieve opendap urls 
 opendap_urls <- get_opendap_url(doc)
