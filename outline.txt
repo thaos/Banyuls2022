@@ -1,0 +1,54 @@
+Banyuls 2022: Access to climate data 
+Climate Data Store
+Earth System Grid Federation
+
+Outline
+
+Quick personnal presentation
+
+Objectives:
+	- Show to access climate data, examples with CORDEX data on CDS and ESGF
+	- Goal is to give you a quick overview of what's possible to do 
+	- Do not hesitate to ask questions 
+	- Do not hesitate to share tips
+	- All code will be provided: https://github.com/thaos/Banyuls2022
+	- I am here until Thursday, so you can come and talk to me afterward (e.g. if you have issue replicated what is presented)
+
+Show CORDEX webpage and data access page:
+	https://cordex.org/data-access/
+CDS sligtly easier to use but for now, not as complete as ESGF for climate simulations
+
+The NetCDF format:
+	https://www.unidata.ucar.edu/software/netcdf/
+
+Climate Data Store (CDS):
+	- Show CDS homepage
+		https://cds.climate.copernicus.eu/
+	- Quick presentation of the CDS
+	- Create an account and connect
+	- Show Cordex description and documentation tab
+	- Show Cordex download form
+	- Give an example to download the 6 variables, one experiment, one rcm, one period.
+	- Show the job/queue pannel
+	- Show the api request
+	- Show documentation: 
+		https://cds.climate.copernicus.eu/api-how-to
+	- Prepare .dots files and install python package.
+	- Submit a request with python script.
+	- Use r and/or python to loop over years
+
+Earth System Grid Federation (ESGF):
+	- Go to esgf home page
+		https://esgf.llnl.gov/
+	- Talk about esgf nodes
+	- Account creation and  sign in
+	- Register to project
+	- Search for cordex data for the 6 variables, one experiment, one rcm, one period.
+	- Download one file by http.
+	- Download several files by wget
+	- Show documentation:
+		https://esgf.github.io/esgf-user-support/user_guide.html
+	- Quick explanation of what is opendap link:
+		https://earthdata.nasa.gov/collaborate/open-data-services-and-software/api/opendap
+	- Extract data from one netcdf by opendap
+	- Parse opendap link from an esgf_search request
