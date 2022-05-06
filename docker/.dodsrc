@@ -1,0 +1,5 @@
+HTTP.COOKIEJAR=/home/sthao/.esg/dods_cookies
+HTTP.SSL.VALIDATE=0
+HTTP.SSL.CERTIFICATE=/home/sthao/.esg/credentials.pem
+HTTP.SSL.KEY=/home/sthao/.esg/credentials.pem
+HTTP.SSL.CAPATH=/home/sthao/.esg/credentials.pem
