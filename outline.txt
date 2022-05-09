@@ -18,6 +18,17 @@ Show CORDEX webpage and data access page:
 	https://cordex.org/data-access/
 CDS sligtly easier to use but for now, not as complete as ESGF for climate simulations
 
+Data that will be downloaded:
+	- GCMs/RCMs: 
+		HC-HadGEM2-ES_ICTP-RegCM4-6
+		IPSL-IPSL-CM5A-MR_IPSL-WRF381P
+	- experiments:
+		Historical, RCP45, RCP85
+	- variables: 
+		10m_wind_speed, 2m_air_temperature, 2m_surface_specific_humidity,
+            	maximum_2m_temperature_in_the_last_24_hours, mean_precipitation_flux, minimum_2m_temperature_in_the_last_24_hours
+
+
 The NetCDF format:
 	https://www.unidata.ucar.edu/software/netcdf/
 
