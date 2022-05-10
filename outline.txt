@@ -61,5 +61,13 @@ Earth System Grid Federation (ESGF):
 		https://esgf.github.io/esgf-user-support/user_guide.html
 	- Quick explanation of what is opendap link:
 		https://earthdata.nasa.gov/collaborate/open-data-services-and-software/api/opendap
+	- Set-up certificate and identification for opendap:
+		1. Run 'bash wget-20220328160802.sh'
+		2. create .dodsrc file (https://esgf.github.io/esgf-user-support/user_guide.html#access-data-with-the-command-line-via-opendap)
 	- Extract data from one netcdf by opendap
 	- Parse opendap link from an esgf_search request
+
+To test this out, you can use a docker container defined by the Dockerfile in the docker folder:
+	1. Build docker container 'sudo docker build -t ubuntu_rp .'
+	2. Run docker containter 'sudo docker run -it -p 8787:8787 --network=host  ubuntu_rp'
+	3. It runs with users 'sthao' and password '0000'. It can be modified in the Dockerfile.
